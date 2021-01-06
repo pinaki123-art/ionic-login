@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/codeswag-logo-alpha.png" alt="codeswag-logo">
+      <br>
+      <br>
+      <br>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>login</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-input [(ngModel)]="user.email" placeholder="username"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-input [(ngModel)]="user.password" placeholder="password" type="password"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button expand="block" (click)="login()">login</ion-button>
+      <ion-button expand="block" color="secondary" (click)="register()">register</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
